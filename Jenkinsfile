@@ -1,7 +1,6 @@
 node {
   git checkout master
 }
-#!/bin/bash -xe
 export RAILS_ENV=development
 bundle install --deployment --path vendor/bundle
 bundle exec rake db:migrate
