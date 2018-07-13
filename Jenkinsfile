@@ -1,3 +1,0 @@
-node {
-  git checkout master
-}
