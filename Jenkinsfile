@@ -19,5 +19,4 @@ rails {
   AWS_DEFAULT_REGION = 'us-east-1'
   SKIP_DEPLOY = 'false'
   DOWNSTREAM_JOB_NAME = 'job_name'
-  DOWNSTREAM_JOB_PARAMS = [string(name: 'rubyVersion', value: version), string(name: 'checksum', value: checksum))]
 }
