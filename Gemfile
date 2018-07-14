@@ -29,6 +29,9 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem "capistrano", "~> 3.11", require: false
+  gem 'capistrano', '~> 3.11'
+  gem 'capistrano-rails', '~> 1.4'
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano3-puma'
 end
 
