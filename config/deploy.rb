@@ -4,9 +4,6 @@ lock "~> 3.11.0"
 set :application, "rails-training"
 set :repo_url, "git@github.com:kenstam/rails-training.git"
 
-# Default branch is :master
-ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
 set :deploy_to, "/railsapp/"
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
@@ -18,7 +15,6 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 
 set :conditionally_migrate, true
-set :keep_assets, 2
 
 set :puma_role, :web
 set :puma_conf, "#{shared_path}/config/puma.rb"
@@ -29,7 +25,5 @@ set :puma_state, "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid, "#{shared_path}/tmp/pids/puma.pid"
 set :puma_access_log, "#{release_path}/log/puma.error.log"
 set :puma_error_log, "#{release_path}/log/puma.access.log"
-set :puma_worker_timeout, 65
 set :puma_init_active_record, true
 set :puma_preload_app, false
-set :puma_prune_bundler, true
