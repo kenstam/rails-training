@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:kenstam/rails-training.git"
 
 set :deploy_to, "/railsapp/"
 
-append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_files, "config/database.yml", "config/secrets.yml", "config/puma.rb"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 set :rbenv_type, :user
@@ -16,6 +16,7 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 
 set :conditionally_migrate, true
 
+append :rbenv_map_bins, 'puma', 'pumactl'
 set :puma_role, :web
 set :puma_conf, "#{shared_path}/config/puma.rb"
 set :puma_bind, "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
