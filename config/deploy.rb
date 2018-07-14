@@ -7,7 +7,7 @@ set :repo_url, "git@github.com:kenstam/rails-training.git"
 set :deploy_to, "/railsapp/"
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
-append :linked_dirs, "config", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
