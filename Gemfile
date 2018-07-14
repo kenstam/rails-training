@@ -3,7 +3,6 @@ ruby '2.3.7'
 
 gem 'rails', '~> 4.2.0'
 gem 'mysql2', '~> 0.4.0'
-#gem 'mysql2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -30,5 +29,10 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'capistrano', '~> 3.11'
+  gem 'capistrano-rails', '~> 1.4'
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano3-puma'
+  gem 'capistrano-git-copy'
 end
 
