@@ -1,7 +1,10 @@
 ---
 language: ruby
+cache:
+  bundler: true
+  directories:
+    - /home/travis/.rvm/
 dist: trusty
-cache: bundler
 services:
   - mysql
 before_install:
