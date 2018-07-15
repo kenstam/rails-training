@@ -1,5 +1,7 @@
+---
 language: ruby
 dist: trusty
+cache: bundler
 services:
   - mysql
 before_install:
