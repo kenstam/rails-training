@@ -1,9 +1,8 @@
 ---
+notifications:
+  email: false
 language: ruby
-cache:
-  bundler: true
-  directories:
-    - /home/travis/.rvm/
+cache: bundler
 dist: trusty
 services:
   - mysql
