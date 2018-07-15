@@ -1,0 +1,11 @@
+---
+language: ruby
+cache:
+  bundler: true
+  directories:
+    - /home/travis/.rvm/
+dist: trusty
+services:
+  - mysql
+before_install:
+  - mysql -e 'CREATE DATABASE training_test;'

@@ -8,3 +8,4 @@ development: &default
 test:
   <<: *default
   database: training_test
+  username: travis
