@@ -7,4 +7,5 @@ dist: trusty
 services:
   - mysql
 before_install:
+  - cp config/database.yml.travis config/database.yml
   - mysql -e 'CREATE DATABASE training_test;'
