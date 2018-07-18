@@ -5,12 +5,16 @@ RUN apt-get update -qq && apt-get install -y \
   build-essential \
   mysql-client
 
-RUN gem install bundler
-
-RUN mkdir /app
+RUN mkdir -p /app
 WORKDIR /app
-COPY Gemfile /app/Gemfile
-COPY Gemfile.lock /app/Gemfile.lock
-RUN bundle install
 
-COPY . /app
+COPY Gemfile Gemfile.lock ./
+RUN gem install bundler && bundle install --jobs 20 --retry 5
+
+ADD . ./
+
+RUN bundle exec rake assets:precompile
+
+ENTRYPOINT ["bundle", "exec"]
+
+CMD ["rails", "server", "-b", "0.0.0.0"]
