@@ -115,7 +115,7 @@ GEM
       ast (~> 2.4.0)
     powerpack (0.1.2)
     puma (3.12.4)
-    rack (1.6.10)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.10)
