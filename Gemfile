@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.7'
+ruby '2.3.8'
 
 gem 'rails', '~> 4.2.0'
 gem 'mysql2', '~> 0.4.0'
@@ -23,7 +23,6 @@ group :development, :test do
   gem 'rspec-set'
   gem 'rspec-activemodel-mocks'
   gem 'rubocop'
-  gem 'bundler-audit'
 end
 
 group :development do
