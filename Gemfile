@@ -2,16 +2,16 @@ source 'https://rubygems.org'
 ruby '2.5.7'
 
 gem 'rails', '~> 4.2.0'
-gem 'mysql2', '~> 0.4.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'mysql2'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'jbuilder'
+gem 'sdoc'
 
 gem 'puma'
 
@@ -26,11 +26,11 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
   gem 'spring'
-  gem 'capistrano', '~> 3.11'
-  gem 'capistrano-rails', '~> 1.4'
-  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
   gem 'capistrano3-puma'
   gem 'capistrano-git-copy'
 end
