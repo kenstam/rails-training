@@ -23,6 +23,7 @@ group :development, :test do
   gem 'rspec-set'
   gem 'rspec-activemodel-mocks'
   gem 'rubocop'
+  gem 'bundler-audit'
 end
 
 group :development do
