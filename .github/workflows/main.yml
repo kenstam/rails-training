@@ -26,7 +26,6 @@ jobs:
 
     - name: Bundle install
       run: |
-        gem install bundler -v '< 2.0'
         bundle config path vendor/bundle
         bundle install --local --jobs 4 --retry 3
 

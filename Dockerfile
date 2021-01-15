@@ -1,9 +1,9 @@
-FROM ruby:2.3.7
+FROM ruby:2.5.7
 
 RUN apt-get update -qq && apt-get install -y \
   python \
   build-essential \
-  mysql-client
+  mariadb-client
 
 RUN mkdir -p /app
 WORKDIR /app
