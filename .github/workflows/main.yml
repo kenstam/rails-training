@@ -36,6 +36,7 @@ jobs:
 
   rspec:
     needs: setup-cache
+    runs-on: ubuntu-latest
     steps:
     - name: Run tests
       run: |
