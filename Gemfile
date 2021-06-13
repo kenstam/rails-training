@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.8'
+ruby '2.5.9'
 
 gem 'rails', '~> 5.2.0'
 gem 'mysql2'
