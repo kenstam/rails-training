@@ -17,5 +17,4 @@ namespace :rubocop do
   end
 end
 
-rescue LoadError # rubocop:disable Lint/HandleExceptions
 end
